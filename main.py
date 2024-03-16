@@ -4,6 +4,16 @@ import bs4
 import requests as request
 import time
 
+### Web scraping function
+'''def sleuth(url):
+    # GET request
+    target = request.get(url)
+    # Parse HTML
+    info = bs4.BeautifulSoup(target.content, 'lxml')
+    # Extract relevant information
+    # scraping here
+    return scraped_data
+'''
 
 target = request.get('https://www.ft.com/markets?segmentID=361c623d-11ab-afbb-414a-568dafa8307d&gad_source=1&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GohdvoM7tCZRwiwhzGyUk250dFid84ybX-sR-TQO65GprC13zN-gP0YaAhenEALw_wcB&gclsrc=aw.ds')
 '''addresses:

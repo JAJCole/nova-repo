@@ -16,6 +16,8 @@ Needs:
 - sends out the letters to a target group
 
 TEMPLATE:
+
+
     # Import necessary libraries
     import requests
     from bs4 import BeautifulSoup

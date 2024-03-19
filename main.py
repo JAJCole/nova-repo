@@ -110,3 +110,14 @@ if __name__ == '__main__':
         RT_sleuth()
         time.sleep(100)
 '''
+
+# test fx for RT tinkering
+def RT_sleuth():
+    target = request.get('https://www.reuters.com/business/aerospace-defense/')
+    info = bs4.BeautifulSoup(target.content, 'lxml')
+    query = info.find_all('a', class_='text__text__1FZLe text__dark-grey__3Ml43 text__medium__1kbOh text__heading_6__1qUJ5 heading__base__2T28j heading__heading_6__RtD9P media-story-card__headline__tFMEu')
+    if not os.path.exists('Reuters_Hits'):
+        os.makedirs('Reuters_Hits')
+    with open('Reuters_Hits/hits.txt', 'a') as ft:
+        # need html tags from webpage to go from title hit, to body paragraph copy and back
+

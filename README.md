@@ -78,3 +78,45 @@ TEMPLATE:
         newsletter_content = create_newsletter(analyzed_data)
         # Send the newsletter to your subscribers
         send_newsletter('subscriber_email@example.com', newsletter_content)
+
+
+## ADDITION
+I am expanding the scope of nova-sleuth to access a great archive API I found. After the search is refined I intend to add a localization feature, to preserve queries and favorite finds.
+
+Needs:
+- ia module import
+- auth. creds needed from API(email pending reply)
+- update bankapp interface to be used for NOVAs CLI
+- new query model for metadata and .txt
+* For Localization:
+- * consider SQLite for local db
+- create or find module for starred queries and caching
+
+# Skeleton for ADDITION
+import modules
+
+def api_fx():
+    pass
+
+def sleuth_fx():
+    pass
+
+def sql_db_save_fx():
+    pass
+
+def localized_query_fx():
+    pass:
+# Command line interface update from banking below
+def main():
+    # script for parser and accessing API tools
+
+# Below for search logic
+    if ... 
+        pass
+# Save logic
+    elif ...
+        pass
+
+
+if __name__ == "__main__":
+    main()
